@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Demo Videos</title>
+<meta name="color-scheme" content="light dark">
+<style>
+:root { --bg: #fff; --fg: #111; --accent: #0a66c2; --muted: #666; }
+@media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#eee; --accent:#7ab8ff; --muted:#aaa; } }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--fg); }
+main { max-width: 720px; margin: 0 auto; padding: 16px; }
+h1 { font-size: clamp(1.25rem, 3.5vw, 1.75rem); margin: 0 0 8px; }
+p.lead { margin: 0 0 16px; color: var(--muted); }
+ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+a.item { display: block; padding: 14px 16px; border: 1px solid rgba(0,0,0,.08); border-radius: 12px; text-decoration: none; color: var(--fg); background: rgba(0,0,0,.02); }
+a.item:focus, a.item:hover { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent), transparent 75%); }
+a.item small { display:block; color: var(--muted); word-break: break-all; }
+.footer { margin-top: 20px; font-size: .875rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Demo Videos</h1>
+<p class="lead">Tap a link to open the GIF in a new tab.</p>
+<ul>
+<li><a class="item" href="http://videos.dylanfesta.qzz.io/pup_run_examples.gif" target="_blank" rel="noopener noreferrer">
+pup run
+<small>http://videos.dylanfesta.qzz.io/video1.gif</small>
+</a></li>
+<li><a class="item" href="http://videos.dylanfesta.qzz.io/pup_retrieve_examples.gif" target="_blank" rel="noopener noreferrer">
+pup retrieve
+<small>http://videos.dylanfesta.qzz.io/video2.gif</small>
+</a></li>
+<li><a class="item" href="http://videos.dylanfesta.qzz.io/chase_examples.gif" target="_blank" rel="noopener noreferrer">
+cricket chase
+<small>http://videos.dylanfesta.qzz.io/video3.gif</small>
+</a></li>
+</ul>
+<p class="footer"><a href="/">← Back to home</a></p>
+</main>
+</body>
+</html>
